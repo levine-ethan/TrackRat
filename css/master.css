@@ -89,6 +89,10 @@ form {
 	padding: 15px 60px;
 }
 
+.review {
+	display:inline-block;
+}
+
 .legal {
 	font-size: 5px;
 }
