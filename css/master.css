@@ -1,93 +1,110 @@
 h1 {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 body {
-    text-align: center;
-    color: black;
-    background-color: #3e3d40;
-    color: white;
+	text-align: center;
+	color: black;
+	background-color: #3e3d40;
+	color: white;
 }
 
 /* set font */
 * {
-    font-family: sans-serif;
-    color: white;
+	font-family: sans-serif;
+	color: white;
 }
 
-table, th {
-    border: 3px solid black;
-    border-radius: 5%;
+table,
+th {
+	border: 3px solid black;
+	border-radius: 5%;
 }
 
 td {
-    border: 1px solid black;
+	border: 1px solid black;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    position:relative;
-    min-width: 960px;
-    min-height: 75px;
-    background-color: #333;
-    overflow: hidden;
+	position: relative;
+	min-width: 960px;
+	min-height: 75px;
+	background-color: #333;
+	overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #adadad;
-    color: black;
+	background-color: #adadad;
+	color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #878787;
-    color: rgb(94, 149, 231);
+	background-color: #878787;
+	color: rgb(94, 149, 231);
 }
 
 /* logo in top right */
 .topnav img {
-    position: absolute;
-    top: 4px;
-    bottom: 4px;
-    right: 20px;
-    width:160px; 
-    height:93%;
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	right: 20px;
+	width: 160px;
+	height: 93%;
 }
 
 /* page content */
 .contentContainer {
-  position: relative;
-  margin: auto;
-  border: 3px solid #878787;
-  padding: 35px;
+	position: relative;
+	margin: auto;
+	border: 3px solid #878787;
+	padding: 35px;
 }
 
 /* button */
 button {
-  background-color: #69696b;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	background-color: #69696b;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 form {
-    padding: 15px 60px;
+	padding: 15px 60px;
 }
 
 .legal {
-    font-size:5px;
+	font-size: 5px;
+}
+
+#tracking-number {
+	color: #000000;
+}
+
+#submit {
+	color: #000000;
+}
+
+#username {
+	color: #000000;
+}
+
+#password {
+	color: #000000;
 }

@@ -7,10 +7,10 @@
 	<body>
 		<!-- nav bar -->
 		<div class="topnav">
-		  <a href="index.html"><b>HOME</b></a>
-		  <a href="contact.html"><b>CONTACT</b></a>
-		  <a href="about.html"><b>ABOUT</b></a>
-		  <img src="../images/logo2.png" alt="logo">
+			<a href="index.html"><b>HOME</b></a>
+			<a href="contact.html"><b>CONTACT</b></a>
+			<a href="about.html"><b>ABOUT</b></a>
+			<img src="../images/logo2.png" alt="logo" />
 		</div>
 
 		<!-- content -->
@@ -22,7 +22,7 @@
 			<form id="tracking-form">
 				<label for="tracking-number">Tracking Number:</label>
 				<input type="text" id="tracking-number" name="tracking-number" />
-				<input type="submit" value="Submit" />
+				<input type="submit" id="submit" value="Submit" />
 			</form>
 
 			<script>
@@ -30,22 +30,40 @@
 					.getElementById("tracking-form")
 					.addEventListener("submit", function (event) {
 						event.preventDefault();
-						let trackingNumber = document.getElementById("tracking-number").value;
+						let trackingNumber =
+							document.getElementById("tracking-number").value;
 						// pass the trackingNumber to your query.js file and run the SQL query
 					});
 			</script>
 		</div>
 
 		<!-- Legal Disclaimer -->
-        <p class="legal">Legal Disclaimer</p>
-        <p class="legal">By using our website, you accept this disclaimer in full. If you disagree with any part of this disclaimer, do not use our website. We reserve the right to modify these terms at any time. You should therefore check back periodically for changes. By using this website after we post any changes, you agree to accept those changes, whether or not you have reviewed them.
-            All information and content on this website is provided “as is” without warranty of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
-            We do not warrant that our website will always be available, uninterrupted, timely, secure, error-free or free from computer virus or other invasive or damaging code or that it will not be affected by any acts of God or other force majeure events.
-            We will not be liable for any damages of any kind arising from the use of this website including but not limited to direct, indirect, incidental punitive and consequential damages.
-            By accessing this website, all data on your computer may be used for commerical and/or political purposes, including the usage by the CCP.
-            We do not endorse any third-party websites linked to our website and we are not responsible for their content.
-            This disclaimer shall be governed by and construed in accordance with Canadian law and any disputes relating to this disclaimer shall be subject to the exclusive jurisdiction of the courts of Canada.
-			This website and all works there within belong to Tyler Renaud, Andrew Simon and Ethan Levine. The University of Windsor accepts a complete lack of control and intellectual rights to all works on this website. 
-         </p>
+		<p class="legal">Legal Disclaimer</p>
+		<p class="legal">
+			By using our website, you accept this disclaimer in full. If you disagree
+			with any part of this disclaimer, do not use our website. We reserve the
+			right to modify these terms at any time. You should therefore check back
+			periodically for changes. By using this website after we post any changes,
+			you agree to accept those changes, whether or not you have reviewed them.
+			All information and content on this website is provided ï¿½as isï¿½ without
+			warranty of any kind, either express or implied, including but not limited
+			to, the implied warranties of merchantability, fitness for a particular
+			purpose, or non-infringement. We do not warrant that our website will
+			always be available, uninterrupted, timely, secure, error-free or free
+			from computer virus or other invasive or damaging code or that it will not
+			be affected by any acts of God or other force majeure events. We will not
+			be liable for any damages of any kind arising from the use of this website
+			including but not limited to direct, indirect, incidental punitive and
+			consequential damages. By accessing this website, all data on your
+			computer may be used for commerical and/or political purposes, including
+			the usage by the CCP. We do not endorse any third-party websites linked to
+			our website and we are not responsible for their content. This disclaimer
+			shall be governed by and construed in accordance with Canadian law and any
+			disputes relating to this disclaimer shall be subject to the exclusive
+			jurisdiction of the courts of Canada. This website and all works there
+			within belong to Tyler Renaud, Andrew Simon and Ethan Levine. The
+			University of Windsor accepts a complete lack of control and intellectual
+			rights to all works on this website.
+		</p>
 	</body>
 </html>
