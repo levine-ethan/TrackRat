@@ -3,13 +3,14 @@ h1 {
 }
 body {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #3d3d40;
     color: black;
 }
 
 /* set font */
 * {
-    font-family: verdana;
+    font-family: sans-serif;
+    color: white;
 }
 
 table, th {
@@ -42,7 +43,7 @@ td {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #adadad;
     color: black;
 }
 
@@ -55,10 +56,11 @@ td {
 /* logo in top right */
 .topnav img {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width:75px; 
-    height:100%;
+    top: 4px;
+    bottom: 4px;
+    right: 20px;
+    width:160px; 
+    height:93%;
 }
 
 /* page content */
@@ -71,7 +73,7 @@ td {
 
 /* button */
 button {
-  background-color: #878787; /* Green */
+  background-color: #69696b;
   border: none;
   color: white;
   padding: 15px 32px;
