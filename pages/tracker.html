@@ -5,24 +5,35 @@
 		<link rel="stylesheet" href="../css/master.css" />
 	</head>
 	<body>
-		<h1>Track-Rat</h1>
-		<h2>The Premier Package Tracking Service</h2>
-		<p>Enter your tracking number below to see the status of your package.</p>
-		<!--create an HTML form to take a tracking number input and pass it to query.js, when the submit button is pressed, run the SQL query and then display the results of the sql query to the HTML page-->
-		<form id="tracking-form">
-			<label for="tracking-number">Tracking Number:</label>
-			<input type="text" id="tracking-number" name="tracking-number" />
-			<input type="submit" value="Submit" />
-		</form>
+		<!-- nav bar -->
+		<div class="topnav">
+		  <a href="index.html">Home</a>
+		  <a href="contact.html">Contact</a>
+		  <a href="about.html">About</a>
+		  <img src="../images/logo.png" alt="logo">
+		</div>
 
-		<script>
-			document
-				.getElementById("tracking-form")
-				.addEventListener("submit", function (event) {
-					event.preventDefault();
-					let trackingNumber = document.getElementById("tracking-number").value;
-					// pass the trackingNumber to your query.js file and run the SQL query
-				});
-		</script>
+		<!-- content -->
+		<div class="contentContainer">
+			<h2>Track A Package</h2>
+			<p>Enter your tracking number below to see the status of your package.</p>
+
+			<!--create an HTML form to take a tracking number input and pass it to query.js, when the submit button is pressed, run the SQL query and then display the results of the sql query to the HTML page-->
+			<form id="tracking-form">
+				<label for="tracking-number">Tracking Number:</label>
+				<input type="text" id="tracking-number" name="tracking-number" />
+				<input type="submit" value="Submit" />
+			</form>
+
+			<script>
+				document
+					.getElementById("tracking-form")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						let trackingNumber = document.getElementById("tracking-number").value;
+						// pass the trackingNumber to your query.js file and run the SQL query
+					});
+			</script>
+		</div>
 	</body>
 </html>

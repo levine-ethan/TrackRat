@@ -5,16 +5,25 @@
     <link rel="stylesheet" href="../css/master.css">
 </head>
 <body>
-    <h1>Track-Rat</h1>
-    <h2>The Premier Package Tracking Service</h2>
+    <!-- nav bar -->
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <img src="../images/logo.png" alt="logo">
+    </div>
 
-    <form action="" method="post">
-     <input type="text" id="username" name="username" placeholder="Username">
-     <input type="text" id="password" name="password" placeholder="Password">
-    </form>
+    <!-- content -->
+    <div class="contentContainer">
+        <h2>Login to TrackRat</h2>
+        <p>Please login below.</p>
+
+        <form action="" method="post">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="password" name="password" placeholder="Password">
+        </form>
+        <button onclick="document.location='tracker.html'">Submit </button>
+    </div>
 </br>
-    <button onclick="document.location='tracker.html'">Submit </button>
-    
-    
 </body>
 </html>
