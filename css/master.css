@@ -3,13 +3,9 @@ h1 {
 }
 body {
     text-align: center;
-<<<<<<< HEAD
-    background-color: #3d3d40;
     color: black;
-=======
-    background-color: black;
+    background-color: #3e3d40;
     color: white;
->>>>>>> c05d4491f5dea2e2b26c5f42d6c11599472c7507
 }
 
 /* set font */
