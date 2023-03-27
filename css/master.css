@@ -8,8 +8,8 @@ body {
 }
 
 /* set font */
-h1, h2, h3, p, a {
-    font-family:verdana;
+* {
+    font-family: verdana;
 }
 
 table, th {
