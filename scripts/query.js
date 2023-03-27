@@ -7,12 +7,15 @@ let db = new sqlite3.Database("./databases/trackrat.db", (err) => {
 });
 
 db.serialize(() => {
-	db.each(`SELECT * FROM tracking WHERE tracking_num = 1`, (err, row) => {
-		if (err) {
-			console.error(err.message);
+	db.each(
+		`SELECT origin, current_location, destination FROM tracking WHERE tracking_num = 1`,
+		(err, row) => {
+			if (err) {
+				console.error(err.message);
+			}
+			console.log(row);
 		}
-		console.log(row);
-	});
+	);
 });
 
 db.close((err) => {
