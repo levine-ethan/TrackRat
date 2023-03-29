@@ -1,25 +1,22 @@
-import sqlite3
 from flask import Flask, render_template
+import sqlite3
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Connect to the database
-    conn = sqlite3.connect('.databases/trackrat.db')
+    conn = sqlite3.connect('./databases/trackrat.db')
     c = conn.cursor()
-
-    # Execute the query
-    c.execute('SELECT * FROM tracking')
-
-    # Fetch the results
+    c.execute("SELECT * FROM tracking")
     data = c.fetchall()
-
-    # Close the connection
-    conn.close()
-
-    # Render the results in an HTML template
-    return render_template('../pages/package.html', data=data)
+    if data:
+        results = []
+        for row in data:
+            origin, destination, current_location = row[1], row[2], row[3]
+            results.append({'origin': origin, 'destination': destination, 'current_location': current_location})
+        return render_template('tracking.html', results=results)
+    else:
+        return "No data found in tracking table"
 
 if __name__ == '__main__':
     app.run()

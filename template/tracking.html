@@ -18,7 +18,14 @@
 	<body>
 		<!-- content -->
 		<div class="contentContainer">
-			<h2>Track A Package</h2>
+			{% if origin %}
+			<h1>Tracking Information</h1>
+			<p><strong>Origin:</strong> {{ origin }}</p>
+			<p><strong>Destination:</strong> {{ destination }}</p>
+			<p><strong>Current Location:</strong> {{ current_location }}</p>
+			{% else %}
+			<h1>No tracking information found</h1>
+			{% endif %}
 		</div>
 	</body>
 
