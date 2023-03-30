@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    conn = sqlite3.connect('./databases/trackrat.db')
+    conn = sqlite3.connect('./database/trackrat.db')
     cur = conn.cursor()
     cur.execute("SELECT * FROM tracking")
     data = cur.fetchall()
