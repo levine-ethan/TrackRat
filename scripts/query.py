@@ -6,17 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     conn = sqlite3.connect('./databases/trackrat.db')
-    c = conn.cursor()
-    c.execute("SELECT * FROM tracking")
-    data = c.fetchall()
-    if data:
-        results = []
-        for row in data:
-            origin, destination, current_location = row[1], row[2], row[3]
-            results.append({'origin': origin, 'destination': destination, 'current_location': current_location})
-        return render_template('tracking.html', results=results)
-    else:
-        return "No data found in tracking table"
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM tracking")
+    data = cur.fetchall()
+    conn.close()
+    return render_template('results.html', data=data)
 
 if __name__ == '__main__':
     app.run()

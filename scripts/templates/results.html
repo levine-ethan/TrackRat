@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Package Tracker</title>
-		<link rel="stylesheet" href="../css/master.css" />
+		<!--add link to master.css-->
+		<link rel="stylesheet" href="../../css/master.css" />
 	</head>
 
 	<nav>
@@ -11,21 +12,22 @@
 			<a href="index.html"><b>HOME</b></a>
 			<a href="about.html"><b>ABOUT</b></a>
 			<a href="contact.html"><b>CONTACT</b></a>
-			<img src="../images/logo2.png" alt="logo" />
+			<img src="../../images/logo2.png" alt="logo" />
 		</div>
 	</nav>
 
 	<body>
 		<!-- content -->
 		<div class="contentContainer">
-			{% if origin %}
-			<h1>Tracking Information</h1>
-			<p><strong>Origin:</strong> {{ origin }}</p>
-			<p><strong>Destination:</strong> {{ destination }}</p>
-			<p><strong>Current Location:</strong> {{ current_location }}</p>
-			{% else %}
-			<h1>No tracking information found</h1>
-			{% endif %}
+			<table>
+				{% for row in data %}
+				<tr>
+					{% for col in row %}
+					<td>{{ col }}</td>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			</table>
 		</div>
 	</body>
 
