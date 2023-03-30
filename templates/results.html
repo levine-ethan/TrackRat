@@ -19,7 +19,14 @@
 	<body>
 		<!-- content -->
 		<div class="contentContainer">
-			<table>
+			<h2>Package Status</h2>
+			<table id="results">
+				<tr>
+					<th>Tracking Number</th>
+					<th>Origin</th>
+					<th>Destination</th>
+					<th>Current Location</th>
+				</tr>
 				{% for row in data %}
 				<tr>
 					{% for col in row %}

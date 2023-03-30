@@ -11,7 +11,6 @@ body {
 
 footer {
 	margin: 25px;
-
 }
 
 /* set font */
@@ -92,7 +91,7 @@ form {
 }
 
 .review {
-	display:inline-block;
+	display: inline-block;
 }
 
 .legal {
@@ -113,4 +112,9 @@ form {
 
 #password {
 	color: #000000;
+}
+
+#results {
+	position: relative;
+	margin: auto;
 }
