@@ -13,11 +13,6 @@ footer {
 	margin: 25px;
 }
 
-/* set font */
-* {
-	font-family: sans-serif;
-	color: white;
-}
 
 table,
 th {
@@ -84,10 +79,21 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+/* button when hovered over */
+button:hover {
+	background-color: #909091; /* Green */
 }
 
 form {
 	padding: 15px 60px;
+}
+
+input {
+	color: black;
 }
 
 .review {
@@ -117,4 +123,11 @@ form {
 #results {
 	position: relative;
 	margin: auto;
+}
+
+
+/* set font */
+* {
+	font-family: sans-serif;
+	color: white;
 }
