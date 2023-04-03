@@ -13,11 +13,24 @@ footer {
 	margin: 25px;
 }
 
+table {
+	border: 3px solid rgb(255, 255, 255);
+	border-collapse: collapse;
+}
 
-table,
 th {
-	border: 3px solid black;
-	border-radius: 5%;
+	background-color: #69696b;
+	color: white;
+	padding: 10px;
+}
+
+tr {
+	text-align: left;
+	border-bottom: 1px solid white;
+}
+
+td {
+	padding: 10px;
 }
 
 /* Add a black background color to the top navigation */
@@ -124,7 +137,6 @@ input {
 	position: relative;
 	margin: auto;
 }
-
 
 /* set font */
 * {
