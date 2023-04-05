@@ -79,7 +79,6 @@ td {
 .contentContainer {
 	position: relative;
 	margin: auto;
-	padding: 35px;
 }
 
 /* button */
@@ -109,9 +108,6 @@ input {
 	color: black;
 }
 
-.review {
-	display: inline-block;
-}
 
 .legal {
 	font-size: 5px;
@@ -138,8 +134,102 @@ input {
 	margin: auto;
 }
 
+/* entire review section */
+.reviewSection article { 
+	padding: 30px;
+	background-color: #616161;
+	background-image:url("../images/warehouse.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+}
+
+/* singular reviews */
+.review article { 
+	border: 1px solid black;
+	margin: 1rem;
+	padding: 2rem 2rem;
+	text-align: center;
+
+	background-color: #989898;
+}
+
+.review img {
+	display: inline;
+}
+
+.reviewElementText {
+	vertical-align: middle;
+	
+}
+
+.heading {
+	font-size: 25px;
+	margin-right: 25px;
+}
+
+.fa {
+	font-size: 25px;
+}
+
+.checked {
+	color: orange;
+}
+
+/* Three column layout */
+.side {
+	float: left;
+	width: 15%;
+	margin-top: 5px;
+}
+
+.middle {
+	float: left;
+	width: 70%;
+	margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+	text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The bar container */
+.bar-container {
+	width: 100%;
+	background-color: #7b7b7b;
+	text-align: center;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 10px; background-color: #04AA6D;}
+.bar-4 {width: 10%; height: 10px; background-color: #2196F3;}
+.bar-3 {width: 5%; height: 10px; background-color: #00bcd4;}
+.bar-2 {width: 2%; height: 10px; background-color: #ff9800;}
+.bar-1 {width: 23%; height: 10px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+	.side, .middle {
+		width: 100%;
+	}
+	/* Hide the right column on small screens */
+	.right {
+		display: none;
+	}
+}
+
 /* set font */
 * {
 	font-family: sans-serif;
 	color: white;
+	box-sizing: border-box;
 }
