@@ -138,21 +138,20 @@ input {
 .reviewSection article { 
 	padding: 30px;
 	background-color: #616161;
-	background-image:url("../images/warehouse.png");
+	background-image:url("../images/background.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100%;
 }
 
-/* singular reviews */
-.review article { 
-	border: 1px solid black;
-	margin: 1rem;
-	padding: 2rem 2rem;
-	text-align: center;
-
-	background-color: #989898;
+/* entire review section */
+.reviewSection2 article { 
+	padding: 30px;
+	background-color: #616161;
+	background-image:url("../images/background-2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .review img {
