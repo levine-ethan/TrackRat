@@ -144,11 +144,21 @@ input {
 	background-size: cover;
 }
 
-/* entire review section */
+
 .reviewSection2 article { 
 	padding: 30px;
 	background-color: #616161;
 	background-image:url("../images/background-2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.reviewSection3 article { 
+	padding: 30px;
+	background-color: #616161;
+	background-image:url("../images/background-3.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
