@@ -144,7 +144,6 @@ input {
 	background-size: cover;
 }
 
-
 .reviewSection2 article { 
 	padding: 30px;
 	background-color: #616161;
@@ -234,6 +233,10 @@ input {
 	.right {
 		display: none;
 	}
+}
+
+.stars {
+	margin-top: 15px;
 }
 
 /* set font */
